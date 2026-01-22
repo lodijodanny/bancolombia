@@ -1,0 +1,103 @@
+/*
+CSS para ManGoApp
+BOTONES
+Autor: Danny Estrada
+*/
+
+button{  
+    border-radius: 5em;
+    border: none;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-family: 'CIBFontSans-Bold', Arial, sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    outline: none;
+    padding: 1em 1em 0.9em 1em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2), 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12);
+}
+
+button:active {
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+
+.rdm-boton--plano{
+    background-color: transparent;
+    box-shadow: none;
+    color: #2c2A29;
+}
+
+.rdm-boton--elevado{
+    background-color: transparent;
+    color: #2c2A29;
+}
+
+.rdm-boton--primario{
+    background-color: #2c2A29;
+    color: #fff;
+}
+
+.rdm-boton--resaltado{
+    background-color: #fdda24;
+    color: #2c2a29;
+}
+
+.rdm-boton--plano-resaltado{
+    background-color: transparent;
+    box-shadow: none;
+    color: #2c2A29;
+}
+
+.rdm-boton--fab{
+    background-color: #ffcd00;
+    color: #2c2A29;
+    border-radius: 50%;
+    bottom: 1em;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    height: 4em;
+    position: fixed;
+    right: 1em;
+    width: 4em;
+    z-index: 200;
+}
+
+.rdm-boton--fab:hover{
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+
+.rdm-boton--fab:active{
+    box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.5), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+}
+
+.rdm-boton--checkbox
+{
+    border: solid 1px black;
+    width: 1em;
+    height: 1em;
+}
+
+
+
+
+.rdm-boton--icono{
+    background-color: #00c389;
+    color: #2c2a29;
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    box-shadow: none;
+}
+
+

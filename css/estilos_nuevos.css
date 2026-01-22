@@ -1,0 +1,536 @@
+/* css/estilos_nuevos.css */
+
+/* Font-Face Declarations */
+
+@media print {
+    @page {
+        margin: 0;
+    }
+}
+
+
+@font-face {
+    font-family: 'CIBFontSans-Bold';
+    src: url('../fonts/CIBFontSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url('../fonts/OpenSans-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Reset y configuración global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    background-color: #f2f2f4;
+    color: #333;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    background-image: url('../img/nueva/fondo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;    
+}
+
+.contenedor_formulario{
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+}
+
+/* Ocupa toda la pantalla con fondo gris opaco */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Color base semitransparente */
+    backdrop-filter: blur(20px); /* Efecto de desenfoque */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+  /* Círculo blanco central */
+  .loader-container {
+    background-color: white;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Círculo giratorio interno */
+  .spinner {
+    border: 2px solid #333;
+    border-top: 2px solid #f3f3f3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Texto */
+  .loader-text {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-weight: 600;
+  }
+
+.app-container {
+    position: relative;
+    max-width: 30rem;
+    margin: 0 auto;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f4;
+    padding: 0.5rem;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin: 0;
+    color: #333;
+}
+
+/* Columnas del header */
+.header-item {
+    display: flex;
+    align-items: center;
+}
+
+.header-left {
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.header-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Importante para que los clics pasen a otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Contenedor del logo y texto */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+
+/* Animación del logo */
+.logo {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Texto TRANSACCION */
+.text-transaccion {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(15px);
+    opacity: 0;
+    max-width: 100%;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+header.scrolled .logo {
+    opacity: 0;
+    transform: translateY(-15px);
+}
+
+header.scrolled .text-transaccion {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+header.scrolled .logout-text {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.header-right {
+    justify-content: flex-end;
+    flex: 1;
+}
+
+/* Texto de navegación */
+.nav-text {
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'CIBFontSans-Bold', sans-serif;
+}
+
+/* Iconos */
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-left {
+    margin-right: 12px;
+}
+
+.icon-right {
+    margin-left: 8px;
+}
+
+/* Logo */
+.logo {
+    height: 2.5rem;
+    width: auto;
+}
+
+/* Main content */
+.main-content {
+    padding: 4.5rem 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Success message */
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.success-icon {
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: #65dbb8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.875rem;
+    color: white;
+    font-size: 2.25rem;
+    line-height: 1;
+    border: solid 0.0625rem #12b786;
+}
+
+.success-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.875rem;
+    color: #333;
+    font-family: 'CIBFontSans-Bold', sans-serif;
+}
+
+.receipt-number,
+.receipt-date {
+    color: #666;
+    font-size: 0.875rem;
+    text-align: center;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+/* Accordion styles */
+.accordion {
+    margin-bottom: 1rem;
+}
+
+.accordion-item {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: #2A2A2A;
+    color: white;
+    cursor: pointer;
+}
+
+.accordion-header h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: 'CIBFontSans-Bold', sans-serif;
+}
+
+.accordion-icon {
+    font-size: 1.125rem;
+    color: white;
+    line-height: 1;
+}
+
+.accordion-content {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+/* Payment details - VERTICAL LAYOUT */
+.payment-detail-vertical {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.payment-detail-vertical:last-child {
+    margin-bottom: 0;
+}
+
+.payment-detail-vertical .detail-label {
+    font-size: 0.75rem;
+    letter-spacing: 0em;
+    color: #333;
+    margin-bottom: -0.08em;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.payment-detail-vertical .detail-value {
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    color: #333;
+    font-family: 'CIBFontSans-Bold', sans-serif;
+}
+
+.description-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: -0.08em;
+    letter-spacing: -0.04em;
+    font-family: 'CIBFontSans-Bold', sans-serif;
+}
+
+.payment-cost {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.decimal {
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: 'OpenSans-Regular', sans-serif;
+    letter-spacing: 0px;
+}
+
+/* Destination details */
+.merchant-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: -0.08em;
+    letter-spacing: -0.04em;
+    font-family: 'CIBFontSans-Bold', sans-serif;
+}
+
+.bank-name {
+    font-size: 0.75rem;
+    letter-spacing: 0em;
+    color: #333;
+    margin-bottom: -0.08em;
+    letter-spacing: -0.01em;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.account-number {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: -0.01em;
+    font-family: 'OpenSans-SemiBold', sans-serif;
+}
+
+/* Origin details */
+.account-type {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: -0.08em;
+    letter-spacing: -0.04em;
+    font-family: 'CIBFontSans-Bold', sans-serif;
+}
+
+.savings-label {
+    font-size: 0.75rem;
+    color: #333;
+    margin-bottom: -0.08em;
+    letter-spacing: -0.01em;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.account-id {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-family: 'OpenSans-SemiBold', sans-serif;
+}
+
+.balance-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0em;
+}
+
+.balance-label {
+    font-size: 0.75rem;
+    color: #333;
+    margin-bottom: -0.08em;
+    letter-spacing: -0.01em;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.balance-amount {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #333;
+    font-family: 'CIBFontSans-Bold', sans-serif;
+}
+
+.eye-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: solid #dad9de 1px;
+}
+
+/* Action buttons */
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0 0.625rem;
+    background-color: #fff;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+}
+
+.action-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+}
+
+.action-emoji {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+    line-height: 1;
+}
+
+.action-button p {
+    font-size: 0.75rem;
+    color: #333;
+    line-height: 1.2;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+/* Bottom navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0.625rem 0.3125rem;
+    z-index: 10;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 0.1rem 0;
+}
+
+.nav-emoji {
+    font-size: 1.375rem;
+    margin-bottom: 0.25rem;
+    line-height: 1;
+}
+
+.nav-item p {
+    font-size: 0.625rem;
+    color: #333;
+    text-align: center;
+    line-height: 1.1;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
