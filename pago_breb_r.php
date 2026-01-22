@@ -121,6 +121,7 @@ $valor_enviado = number_format($valor_enviado, 0, ",", ".");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Pago Exitoso</title>
+    <link rel="preload" as="image" href="img/nueva/header_bre_b.jpg">
     <link rel="stylesheet" href="css/estilos_nuevos.css">
     <style>
 

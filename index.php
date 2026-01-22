@@ -31,13 +31,38 @@
 	    window.addEventListener("load", function() {
 	      var loading = document.getElementById("loading");
 	      var video = document.getElementById("loading-video");
-
+	      
+	      // Tiempo mínimo de visualización
+	      var minTime = 3000; // 3 segundos
+	      var videoReady = false;
+	      
+	      // Función para ocultar el preloader
+	      function hideLoading() {
+	        if (loading) {
+	          loading.style.display = "none";
+	        }
+	      }
+	      
+	      // Cuando el video puede reproducirse
+	      video.addEventListener("canplay", function() {
+	        videoReady = true;
+	        setTimeout(hideLoading, minTime);
+	      });
+	      
+	      // Si el video falla, ocultarlo igual
+	      video.addEventListener("error", function() {
+	        console.warn("Error al cargar el video");
+	        setTimeout(hideLoading, minTime);
+	      });
+	      
+	      // Fallback: si no carga en 8 segundos, ocultar de todas formas
 	      setTimeout(function() {
-	        loading.style.display = "none";
-	      }, 6000); // 6000 milisegundos = 6 segundos
-
-	      video.addEventListener("canplaythrough", function() {
-	        video.play();
+	        hideLoading();
+	      }, 8000);
+	      
+	      // Intentar reproducir manualmente si autoplay no funcionó
+	      video.play().catch(function(error) {
+	        console.warn("Autoplay bloqueado o error:", error);
 	      });
 	    });
 	  </script>
@@ -99,7 +124,7 @@
 	</head>
 
 	<div id="loading">
-	    <video id="loading-video" src="img/loading.webm" loop muted></video>
+	    <video id="loading-video" src="img/loading.webm" autoplay muted playsinline preload="auto" loop></video>
 	 </div>
 
 
@@ -354,6 +379,34 @@
 
 					<hr>
 
+					<a href="pago_no_inscritos_f.php?nombre_personalizado=Stq+Sas&producto_destino=64700007290&tipo_destino=Ahorros">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago no inscritos TQ Pedregal</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_no_inscritos_f.php?nombre_personalizado=Stq+Sas&producto_destino=64700007140&tipo_destino=Ahorros">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago no inscritos TQ San Javier</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<hr>
+
 
 					<a href="pago_qr_negro_f.php">
 						<article class="rdm-lista--item-sencillo">
@@ -513,6 +566,32 @@
 								</div>
 								<div class="rdm-lista--contenedor">
 									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Bizcochería</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=TQ+S+CRISTOBAL+1&codigo_negocio=0089257872">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b TQ San Cristobal</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=WELC+POWER+SAS&codigo_negocio=0039579420">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b TQ Welc Power</b></h2>
 								</div>
 							</div>
 						</article>
