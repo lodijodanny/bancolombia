@@ -517,6 +517,19 @@
 						</article>
 					</a>
 
+					<a href="pago_breb_f.php?punto_venta=HEALTHY+MUSCLE+MAKER&codigo_negocio=0029337268">
+					<article class="rdm-lista--item-sencillo">
+						<div class="rdm-lista--izquierda-sencillo">
+							<div class="rdm-lista--contenedor">
+								<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+							</div>
+							<div class="rdm-lista--contenedor">
+								<h2 class="rdm-lista--titulo"><b>Pago Bre-b Healthy Laureles</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
 					<hr>
 
 					<a href="pago_breb_f.php?punto_venta=PERGAMINO+ARKADIA&codigo_negocio=0081023277">
@@ -532,18 +545,7 @@
 						</article>
 					</a>
 
-					<a href="pago_breb_f.php?punto_venta=DISTRIBUCIONES+VGM&codigo_negocio=0029552510">
-						<article class="rdm-lista--item-sencillo">
-							<div class="rdm-lista--izquierda-sencillo">
-								<div class="rdm-lista--contenedor">
-									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
-								</div>
-								<div class="rdm-lista--contenedor">
-									<h2 class="rdm-lista--titulo"><b>Pago Bre-b VGM</b></h2>
-								</div>
-							</div>
-						</article>
-					</a>
+					
 
 					<a href="pago_breb_f.php?punto_venta=MOLIDO+CAFE+Y+PAN+ROBL&codigo_negocio=0041561986">
 						<article class="rdm-lista--item-sencillo">
@@ -553,6 +555,19 @@
 								</div>
 								<div class="rdm-lista--contenedor">
 									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Molido Robledo</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=MOLIDO+CAFE+Y+PAN+EXIT&enviado_a=MOLIDO+CAFE+Y+PAN+EXITO+COLOMBIA&codigo_negocio=0041561689">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Molido Colombia</b></h2>
 								</div>
 							</div>
 						</article>
@@ -591,7 +606,20 @@
 									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
 								</div>
 								<div class="rdm-lista--contenedor">
-									<h2 class="rdm-lista--titulo"><b>Pago Bre-b TQ Welc Power</b></h2>
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Welc Power</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=DISTRIBUCIONES+VGM&codigo_negocio=0029552510">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b VGM</b></h2>
 								</div>
 							</div>
 						</article>
