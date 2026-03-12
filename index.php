@@ -468,6 +468,22 @@
 						</article>
 					</a>
 
+
+					<hr>
+
+					<a href="pago_no_inscritos_f.php?nombre_personalizado=Colvanes+Sas&producto_destino=03195977213&tipo_destino=Corriente">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago no inscritos Colvanes SAS</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
 					<hr>
 
 					<a href="pago_no_inscritos_f.php?nombre_personalizado=Stq+Sas&producto_destino=64700007290&tipo_destino=Ahorros">
