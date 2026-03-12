@@ -31,35 +31,35 @@
 	    window.addEventListener("load", function() {
 	      var loading = document.getElementById("loading");
 	      var video = document.getElementById("loading-video");
-	      
+
 	      // Tiempo mínimo de visualización
 	      var minTime = 3000; // 3 segundos
 	      var videoReady = false;
-	      
+
 	      // Función para ocultar el preloader
 	      function hideLoading() {
 	        if (loading) {
 	          loading.style.display = "none";
 	        }
 	      }
-	      
+
 	      // Cuando el video puede reproducirse
 	      video.addEventListener("canplay", function() {
 	        videoReady = true;
 	        setTimeout(hideLoading, minTime);
 	      });
-	      
+
 	      // Si el video falla, ocultarlo igual
 	      video.addEventListener("error", function() {
 	        console.warn("Error al cargar el video");
 	        setTimeout(hideLoading, minTime);
 	      });
-	      
+
 	      // Fallback: si no carga en 8 segundos, ocultar de todas formas
 	      setTimeout(function() {
 	        hideLoading();
 	      }, 8000);
-	      
+
 	      // Intentar reproducir manualmente si autoplay no funcionó
 	      video.play().catch(function(error) {
 	        console.warn("Autoplay bloqueado o error:", error);
@@ -272,9 +272,9 @@
 
 				<article class="rdm-lista--item-sencillo">
 
-				
 
-    
+
+
 					<select id="pagoSelector">
 						<option value="">--- Elija una opción ---</option>
 
@@ -312,7 +312,7 @@
 					// Escuchamos cuando el usuario cambia la opción
 					document.getElementById('pagoSelector').onchange = function() {
 						var url = this.value; // Obtenemos el link con todo y variables
-						if (url) { 
+						if (url) {
 							window.location.href = url; // Redirigimos
 						}
 					};
@@ -429,7 +429,7 @@
 					</a>
 
 <hr>
-					
+
 
 					<a href="pago_no_inscritos_f.php">
 						<article class="rdm-lista--item-sencillo">
@@ -527,14 +527,27 @@
 						</article>
 					</a>
 
+					<a href="pago_qr_generado_f.php?descripcion=THEMATIC+SUITES&nombre_personalizado=MARINA+ESTER+ROZO+DE&producto_destino=00554503241&tipo_destino=Ahorros">
 						<article class="rdm-lista--item-sencillo">
 							<div class="rdm-lista--izquierda-sencillo">
-	<a href="pago_qr_generado_f.php?descripcion=THEMATIC+SUITES&nombre_personalizado=MARINA+ESTER+ROZO+DE&producto_destino=00554503241&tipo_destino=Ahorros">
-							<div class="rdm-lista--contenedor">
+								<div class="rdm-lista--contenedor">
 									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
 								</div>
 								<div class="rdm-lista--contenedor">
 									<h2 class="rdm-lista--titulo"><b>Código QR Generado Thematic</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_qr_generado_f.php?descripcion=PADRE+NUESTRO+SURAMERICANA&nombre_personalizado=SEBASTIAN+MINOTA+CA&producto_destino=36053158433&tipo_destino=Ahorros">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Código QR Generado PN Suramericana</b></h2>
 								</div>
 							</div>
 						</article>
@@ -568,8 +581,8 @@
 							</div>
 						</article>
 					</a>
-					
-<a href="pago_breb_f.php?punto_venta=HEALTHY+MUSCLE+MAKER1&codigo_negocio=0090366682">
+
+					<a href="pago_breb_f.php?punto_venta=HEALTHY+MUSCLE+MAKER1&codigo_negocio=0090366682">
 					<article class="rdm-lista--item-sencillo">
 						<div class="rdm-lista--izquierda-sencillo">
 							<div class="rdm-lista--contenedor">
@@ -636,7 +649,33 @@
 						</article>
 					</a>
 
-					
+					<a href="pago_breb_f.php?punto_venta=PERGAMINO+LAURELES&codigo_negocio=0081023178">
+					<article class="rdm-lista--item-sencillo">
+						<div class="rdm-lista--izquierda-sencillo">
+							<div class="rdm-lista--contenedor">
+								<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+							</div>
+							<div class="rdm-lista--contenedor">
+								<h2 class="rdm-lista--titulo"><b>Pago Bre-b Pergamino Laureles</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=PERGAMINO+FERIA&codigo_negocio=0081023285">
+					<article class="rdm-lista--item-sencillo">
+						<div class="rdm-lista--izquierda-sencillo">
+							<div class="rdm-lista--contenedor">
+								<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+							</div>
+							<div class="rdm-lista--contenedor">
+								<h2 class="rdm-lista--titulo"><b>Pago Bre-b Pergamino Oviedo</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+
 
 					<a href="pago_breb_f.php?punto_venta=MOLIDO+CAFE+Y+PAN+ROBL&codigo_negocio=0041561986">
 						<article class="rdm-lista--item-sencillo">
@@ -703,6 +742,19 @@
 						</article>
 					</a>
 
+					<a href="pago_breb_f.php?punto_venta=PEOPLE+PIZZA+LA+80&codigo_negocio=0091252564">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b People Pizza la 80</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
 					<a href="pago_breb_f.php?punto_venta=DISTRIBUCIONES+VGM&codigo_negocio=0029552510">
 						<article class="rdm-lista--item-sencillo">
 							<div class="rdm-lista--izquierda-sencillo">
@@ -722,13 +774,13 @@
 
 
 
-				
+
 
 
 
 
 				<div class="rdm-lista--contenedor">
-    
+
 
 
 			</main>
