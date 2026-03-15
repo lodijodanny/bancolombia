@@ -680,6 +680,19 @@
 						</article>
 					</a>
 
+					<a href="pago_breb_f.php?punto_venta=PERGAMINO+DISTRITO+VER&codigo_negocio=0081023251">
+					<article class="rdm-lista--item-sencillo">
+						<div class="rdm-lista--izquierda-sencillo">
+							<div class="rdm-lista--contenedor">
+								<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+							</div>
+							<div class="rdm-lista--contenedor">
+								<h2 class="rdm-lista--titulo"><b>Pago Bre-b Pergamino Ciudad del rio</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
 					<a href="pago_breb_f.php?punto_venta=PERGAMINO+LAURELES&codigo_negocio=0081023178">
 					<article class="rdm-lista--item-sencillo">
 						<div class="rdm-lista--izquierda-sencillo">
@@ -781,6 +794,34 @@
 								</div>
 								<div class="rdm-lista--contenedor">
 									<h2 class="rdm-lista--titulo"><b>Pago Bre-b People Pizza la 80</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=EDS+Estrella+de+Occide&codigo_negocio=0073937187">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b EDS Estrella de Occidente</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<hr>
+
+					<a href="pago_breb_f.php?punto_venta=Carniceria+Ok&codigo_negocio=0067440636">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Carniceria Ok</b></h2>
 								</div>
 							</div>
 						</article>
