@@ -263,62 +263,6 @@
 
 
 
-				<br>
-
-				<h1 class="rdm-tarjeta--titulo-largo" style="color: #2c2A29; font-weight: 500; font-size: 0.975em; font-family: 'OpenSans-Regular', Arial, sans-serif; letter-spacing: -.3px; margin-top: 0em">PUNTOS DE PAGO</h1>
-				<br>
-				<section class="rdm-lista-sencillo">
-
-
-				<article class="rdm-lista--item-sencillo">
-
-
-
-
-					<select id="pagoSelector">
-						<option value="">--- Elija una opción ---</option>
-
-						<optgroup label="Pagos No Inscritos">
-							<option value="pago_no_inscritos_f.php?nombre_personalizado=Juan+Pablo+Duque+Garcia&producto_destino=34462741865&tipo_destino=Ahorros">People Pizza 80</option>
-							<option value="pago_no_inscritos_f.php?nombre_personalizado=Stq+Sas&producto_destino=64700007290&tipo_destino=Ahorros">TQ Pedregal</option>
-							<option value="pago_no_inscritos_f.php?nombre_personalizado=Stq+Sas&producto_destino=64700007140&tipo_destino=Ahorros">TQ San Javier</option>
-						</optgroup>
-
-						<optgroup label="Códigos QR Tradicionales">
-							<option value="pago_qr_negro_f.php">Pago QR Negro</option>
-							<option value="pago_qr_generado_f.php">Código QR Generado (General)</option>
-							<option value="pago_qr_generado_f.php?descripcion=THEMATIC+SUITES&nombre_personalizado=MARINA+ESTER+ROZO+DE&producto_destino=00554503241&tipo_destino=Ahorros">Código QR Thematic Suites</option>
-							<option value="pago_qr_generado_f.php?descripcion=spa&nombre_personalizado=JHOCELIN+LOPEZ+ROJAS&producto_destino=91290859323&tipo_destino=Ahorros">Código QR Cuervo (Spa)</option>
-						</optgroup>
-
-						<optgroup label="Pagos Bre-b (Interoperables)">
-							<option value="pago_breb_f.php">Pago QR Bre-b (General)</option>
-							<option value="pago_breb_f.php?punto_venta=HEALTHY+MUSCLE+MAKER1&codigo_negocio=0090366682">Bre-b Healthy Colombia</option>
-							<option value="pago_breb_f.php?punto_venta=HEALTHY+MUSCLE+MAKER&codigo_negocio=0029337268">Bre-b Healthy Vizcaya</option>
-							<option value="pago_breb_f.php?punto_venta=HEALTHY+MUSCLE+MAKER&codigo_negocio=0029337268">Bre-b Healthy Américas</option>
-							<option value="pago_breb_f.php?punto_venta=HEALTHY+MUSCLE+MAKER&codigo_negocio=0029337268">Bre-b Healthy Laureles</option>
-							<option value="pago_breb_f.php?punto_venta=PERGAMINO+ARKADIA&codigo_negocio=0081023277">Bre-b Pergamino Arkadia</option>
-							<option value="pago_breb_f.php?punto_venta=MOLIDO+CAFE+Y+PAN+ROBL&codigo_negocio=0041561986">Bre-b Molido Robledo</option>
-							<option value="pago_breb_f.php?punto_venta=MOLIDO+CAFE+Y+PAN+EXIT&enviado_a=MOLIDO+CAFE+Y+PAN+EXITO+COLOMBIA&codigo_negocio=0041561689">Bre-b Molido Colombia</option>
-							<option value="pago_breb_f.php?punto_venta=BIZCOCHERIA+Y+GELATO&codigo_negocio=0080537608">Bre-b Bizcochería</option>
-							<option value="pago_breb_f.php?punto_venta=TQ+S+CRISTOBAL+1&codigo_negocio=0089257872">Bre-b TQ San Cristobal</option>
-							<option value="pago_breb_f.php?punto_venta=WELC+POWER+SAS&codigo_negocio=0039579420">Bre-b Welc Power</option>
-							<option value="pago_breb_f.php?punto_venta=DISTRIBUCIONES+VGM&codigo_negocio=0029552510">Bre-b VGM</option>
-						</optgroup>
-					</select>
-				</div>
-
-				<script>
-					// Escuchamos cuando el usuario cambia la opción
-					document.getElementById('pagoSelector').onchange = function() {
-						var url = this.value; // Obtenemos el link con todo y variables
-						if (url) {
-							window.location.href = url; // Redirigimos
-						}
-					};
-				</script>
-
-				</article>
 
 
 
@@ -527,6 +471,19 @@
 						</article>
 					</a>
 
+					<a href="pago_no_inscritos_f.php?nombre_personalizado=Luis+Fernando+Pamplona+Restrepo&producto_destino=10040820518&tipo_destino=Ahorros">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago no inscritos Luis Fernando Pamplona</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
 					<hr>
 
 
@@ -592,6 +549,19 @@
 								</div>
 								<div class="rdm-lista--contenedor">
 									<h2 class="rdm-lista--titulo"><b>Código QR Generado Cuervo</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_qr_generado_f.php?descripcion=CARLOS+FERNANDO+MUNOZ+UPE&producto_destino=3007818705&tipo_destino=Nequi">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Código QR Generado Carlos Fernando Muñoz</b></h2>
 								</div>
 							</div>
 						</article>

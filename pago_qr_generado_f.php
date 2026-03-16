@@ -22,17 +22,17 @@
                 <!-- <span>Cancelar</span> -->
             </div>
         </div>
-        
+
         <!-- Elemento central: Logo -->
         <a href="index.php">
         <div class="header-item header-center">
             <div class="logo-container">
                 <img src="img/nueva/logo.jpg" class="logo">
                 <div class="text-transaccion">Transferencias</div>
-            </div> 
+            </div>
         </div>
         </a>
-        
+
         <!-- Elemento derecho: Siguiente con icono -->
         <a href="index.php">
         <div class="header-item header-right">
@@ -51,15 +51,15 @@
         <main class="main-content">
             <!-- Success message -->
             <div class="success-container">
-                
+
                 <h1 class="success-title">Pago QR generado</h1>
             </div>
 
             <!-- Formulario qr negro -->
             <form action="pago_qr_generado_r.php" method="post" autocomplete="off">
                 <input type="hidden" name="pagar" value="si" />
-                
-                
+
+
                 <h4>¿Cuanto vas a pagar?</h4>
 
                 <div class="contenedor_formulario">
@@ -77,7 +77,7 @@
 
                 <!-- <p class="rdm-formularios--label"><label for="punto_venta">Punto de venta</label></p>
                 <p><input class="rdm-formularios--input-grande" type="text" id="punto_venta" name="punto_venta" value="" placeholder="Punto de venta"></p>
-                <br>                
+                <br>
 
                 <p class="rdm-formularios--label"><label for="codigo_negocio">Código de negocio</label></p>
                 <p><input class="rdm-formularios--input-grande" type="number" id="codigo_negocio" name="codigo_negocio" value="" placeholder="#"></p>
@@ -90,9 +90,9 @@
                 <p class="rdm-formularios--label"><label for="nombre_personalizado">Nombre personalizado</label></p>
                 <p><input class="rdm-formularios--input-grande" type="text" id="nombre_personalizado" name="nombre_personalizado" value="<?php echo isset($_GET['nombre_personalizado']) ? htmlspecialchars($_GET['nombre_personalizado']) : ''; ?>" placeholder="Nombre personalizado" ></p>
                 <br>
-                
 
-                
+
+
 
                 <p class="rdm-formularios--label"><label for="producto_destino">Producto destino</label></p>
                 <p><input class="rdm-formularios--input-grande" type="number" id="producto_destino" name="producto_destino" value="<?php echo isset($_GET['producto_destino']) ? htmlspecialchars($_GET['producto_destino']) : ''; ?>" placeholder="#" ></p>
@@ -102,6 +102,7 @@
 		        <p><select class="rdm-formularios--input-grande" id="tipo_destino" name="tipo_destino" >
 		            <option value="Ahorros - Bancolombia" <?php echo (isset($_GET['tipo_destino']) && $_GET['tipo_destino'] == 'Ahorros - Bancolombia') ? 'selected' : ''; ?>>Ahorros - Bancolombia</option>
 		            <option value="Corriente - Bancolombia" <?php echo (isset($_GET['tipo_destino']) && $_GET['tipo_destino'] == 'Corriente - Bancolombia') ? 'selected' : ''; ?>>Corriente - Bancolombia</option>
+		            <option value="Nequi" <?php echo (isset($_GET['tipo_destino']) && $_GET['tipo_destino'] == 'Nequi') ? 'selected' : ''; ?>>Nequi</option>
 		        </select></p>
                 <br>
 
@@ -129,7 +130,7 @@
                 <br>
 
                 </div>
-		        
+
 
 
                 <p class="rdm-formularios--submit"><button type="submit" class="rdm-boton--resaltado" style="width: 100%">Enviar dinero</button></p>

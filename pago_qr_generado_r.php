@@ -71,7 +71,7 @@ $valor_enviado = $dinero;
 $valor_enviado = number_format($valor_enviado, 0, ",", ".");
 
 ?>
- 
+
  <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -103,17 +103,17 @@ $valor_enviado = number_format($valor_enviado, 0, ",", ".");
                 <!-- <span>Cancelar</span> -->
             </div>
         </div>
-        
+
         <!-- Elemento central: Logo -->
         <a href="index.php">
         <div class="header-item header-center">
             <div class="logo-container">
                 <img src="img/nueva/logo.jpg" class="logo">
                 <div class="text-transaccion">¡Transferencia exitosa!</div>
-            </div> 
+            </div>
         </div>
         </a>
-        
+
         <!-- Elemento derecho: Siguiente con icono -->
         <a href="pago_qr_generado_f.php">
         <div class="header-item header-right">
@@ -178,7 +178,13 @@ $valor_enviado = number_format($valor_enviado, 0, ",", ".");
                     <div class="accordion-content">
                         <p class="merchant-name"><?php echo ($nombre_personalizado) ?></p>
                         <p class="bank-name"><?php echo ($producto_destino_tipo) ?></p>
-                        <p class="account-number"><?php echo $pro_des_num_1; ?> - <?php echo $pro_des_num_2; ?> - <?php echo $pro_des_num_3; ?></p>
+                        <p class="account-number"><?php
+                            if ($tipo_destino === 'Nequi') {
+                                echo $producto_destino_numero;
+                            } else {
+                                echo $pro_des_num_1; ?> - <?php echo $pro_des_num_2; ?> - <?php echo $pro_des_num_3;
+                            }
+                        ?></p>
                     </div>
                 </div>
             </div>
@@ -196,7 +202,7 @@ $valor_enviado = number_format($valor_enviado, 0, ",", ".");
                         <p class="account-type">Cuenta de Ahorros</p>
                         <p class="savings-label">Ahorros</p>
                         <p class="account-id"><span class="balance-amount">*</span>2378</p>
-                        
+
                         <div class="balance-container">
                             <div class="balance-info">
                                 <p class="balance-label">Nuevo saldo disponible</p>
@@ -277,7 +283,7 @@ $valor_enviado = number_format($valor_enviado, 0, ",", ".");
         // Función para detectar el scroll y cambiar el logo por texto
         window.addEventListener('scroll', function() {
             const header = document.getElementById('main-header');
-            
+
             // Añade la clase 'scrolled' cuando el scroll pasa de 50px
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
