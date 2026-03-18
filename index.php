@@ -689,7 +689,7 @@
 						</article>
 					</a>
 
-
+					<hr>
 
 					<a href="pago_breb_f.php?punto_venta=MOLIDO+CAFE+Y+PAN+ROBL&codigo_negocio=0041561986">
 						<article class="rdm-lista--item-sencillo">
@@ -777,6 +777,32 @@
 								</div>
 								<div class="rdm-lista--contenedor">
 									<h2 class="rdm-lista--titulo"><b>Pago Bre-b EDS Estrella de Occidente</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=ALMACENES+FDC&codigo_negocio=0048529937">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Almacenes FDC</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=Action+Black&codigo_negocio=0029789807">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Action Black</b></h2>
 								</div>
 							</div>
 						</article>
