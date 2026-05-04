@@ -22,17 +22,17 @@
                 <!-- <span>Cancelar</span> -->
             </div>
         </div>
-        
+
         <!-- Elemento central: Logo -->
         <a href="index.php">
         <div class="header-item header-center">
             <div class="logo-container">
                 <img src="img/nueva/logo.jpg" class="logo">
                 <div class="text-transaccion">Transferencias</div>
-            </div> 
+            </div>
         </div>
         </a>
-        
+
         <!-- Elemento derecho: Siguiente con icono -->
         <a href="index.php">
         <div class="header-item header-right">
@@ -51,15 +51,15 @@
         <main class="main-content">
             <!-- Success message -->
             <div class="success-container">
-                
+
                 <h1 class="success-title">Pago No Inscritos</h1>
             </div>
 
             <!-- Formulario qr negro -->
             <form action="pago_no_inscritos_r.php" method="post" autocomplete="off">
                 <input type="hidden" name="pagar" value="si" />
-                
-                
+
+
                 <h4>¿Cuanto vas a pagar?</h4>
 
                 <div class="contenedor_formulario">
@@ -84,13 +84,14 @@
 		            <option value=""></option>
 		            <option value="Ahorros" <?php echo (isset($_GET['tipo_destino']) && $_GET['tipo_destino'] == 'Ahorros') ? 'selected' : ''; ?>>Ahorros</option>
 		            <option value="Corriente" <?php echo (isset($_GET['tipo_destino']) && $_GET['tipo_destino'] == 'Corriente') ? 'selected' : ''; ?>>Corriente</option>
+		            <option value="Nequi" <?php echo (isset($_GET['tipo_destino']) && $_GET['tipo_destino'] == 'Nequi') ? 'selected' : ''; ?>>Nequi</option>
 		        </select></p>
                 <br>
 
                 <p class="rdm-formularios--label"><label for="nombre_personalizado">Nombre personalizado</label></p>
                 <p><input class="rdm-formularios--input-grande" type="text" id="nombre_personalizado" name="nombre_personalizado" value="<?php echo isset($_GET['nombre_personalizado']) ? htmlspecialchars($_GET['nombre_personalizado']) : ''; ?>" placeholder="Nombre personalizado" required></p>
                 <br>
-                
+
 
                 <p class="rdm-formularios--label"><label for="descripcion">Descripción</label></p>
                 <p><input class="rdm-formularios--input-grande" type="text" id="descripcion" name="descripcion" value="<?php echo isset($_GET['descripcion']) ? htmlspecialchars($_GET['descripcion']) : ''; ?>" placeholder="Descripción" ></p>
@@ -120,7 +121,7 @@
                 <br>
 
                 </div>
-		        
+
 
 
                 <p class="rdm-formularios--submit"><button type="submit" class="rdm-boton--resaltado" style="width: 100%">Enviar dinero</button></p>
