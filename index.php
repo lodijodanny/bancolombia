@@ -702,6 +702,19 @@
 						</article>
 					</a>
 
+					<a href="pago_breb_f.php?punto_venta=PERGAMINO+VIA+PRIMAVER&codigo_negocio=0081023061">
+					<article class="rdm-lista--item-sencillo">
+						<div class="rdm-lista--izquierda-sencillo">
+							<div class="rdm-lista--contenedor">
+								<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+							</div>
+							<div class="rdm-lista--contenedor">
+								<h2 class="rdm-lista--titulo"><b>Pago Bre-b Pergamino Vía Primavera</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
 					<hr>
 
 					<a href="pago_breb_f.php?punto_venta=MOLIDO+CAFE+Y+PAN+ROBL&codigo_negocio=0041561986">
@@ -730,7 +743,7 @@
 						</article>
 					</a>
 
-					<a href="pago_breb_f.php?punto_venta=BIZCOCHERIA+Y+GELATO&codigo_negocio=0080537608">
+					<a href="pago_breb_f.php?punto_venta=BIZCOCHERIA+GELATO&enviado_a=BIZCOCHERIA+GELATO&codigo_negocio=0091868062">
 						<article class="rdm-lista--item-sencillo">
 							<div class="rdm-lista--izquierda-sencillo">
 								<div class="rdm-lista--contenedor">
@@ -756,7 +769,7 @@
 						</article>
 					</a>
 
-					<a href="pago_breb_f.php?punto_venta=WELC+POWER+SAS&codigo_negocio=0039579420">
+					<a href="pago_breb_f.php?punto_venta=Welc+Power+Sas&codigo_negocio=0089703989">
 						<article class="rdm-lista--item-sencillo">
 							<div class="rdm-lista--izquierda-sencillo">
 								<div class="rdm-lista--contenedor">
@@ -857,6 +870,46 @@
 								</div>
 								<div class="rdm-lista--contenedor">
 									<h2 class="rdm-lista--titulo"><b>Pago Bre-b VGM</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+
+					<a href="pago_breb_f.php?punto_venta=PezZ+Postre&enviado_a=PEZZ+POSTRE&codigo_negocio=0091715962">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b PezZ Postre</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=Bross+Car+Wash+Medelli&enviado_a=BROSS+CAR+WASH+MEDELLIN+GUAYABAL&codigo_negocio=0091140613">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Bross Car Wash Medelli</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=A+J+CONVERGENCIA+MOTOS&enviado_a=A+J+CONVERGENCIA+MOTOS+SAS&codigo_negocio=0048609622">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Aj Convergencia Motos</b></h2>
 								</div>
 							</div>
 						</article>
