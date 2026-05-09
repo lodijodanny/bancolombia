@@ -795,6 +795,19 @@
 						</article>
 					</a>
 
+					<a href="pago_breb_f.php?punto_venta=PEOPLE+PIZZA+FLORIDA&enviado_a=PEOPLE+PIZZA+FLORIDA&codigo_negocio=0091250228">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b People Pizza Florida</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
 					<a href="pago_breb_f.php?punto_venta=EDS+Estrella+de+Occide&codigo_negocio=0073937187">
 						<article class="rdm-lista--item-sencillo">
 							<div class="rdm-lista--izquierda-sencillo">
@@ -910,6 +923,32 @@
 								</div>
 								<div class="rdm-lista--contenedor">
 									<h2 class="rdm-lista--titulo"><b>Pago Bre-b Aj Convergencia Motos</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=LA+MAL+SENTADA&enviado_a=LA+MAL+SENTADA&codigo_negocio=0067783654">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b La Mal Sentada</b></h2>
+								</div>
+							</div>
+						</article>
+					</a>
+
+					<a href="pago_breb_f.php?punto_venta=C+MANCHURIA+STA+FE&enviado_a=C+MANCHURIA+STA+FE&codigo_negocio=0044892883">
+						<article class="rdm-lista--item-sencillo">
+							<div class="rdm-lista--izquierda-sencillo">
+								<div class="rdm-lista--contenedor">
+									<div class="rdm-lista--icono"><i class="zmdi zmdi-camera-add zmdi-hc-2x"></i></div>
+								</div>
+								<div class="rdm-lista--contenedor">
+									<h2 class="rdm-lista--titulo"><b>Pago Bre-b C Manchuria Sta Fe</b></h2>
 								</div>
 							</div>
 						</article>
